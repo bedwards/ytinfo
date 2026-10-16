@@ -46,3 +46,9 @@ nlm source add <notebook-id> \
   --text "$(jq -r '.transcript' /tmp/vid.json)" \
   --title "$(jq -r '.title' /tmp/vid.json)"
 ```
+
+## ArtCraft (what Brian means by it)
+
+"ArtCraft" means **storytold's Craft Apps**: free, open-source (Apache-2.0), clean-room, pure-Rust replacements for Adobe and Microsoft Office, built for Claude to drive headless through CLI and MCP. They are vectorcraft (Illustrator), designcraft (InDesign), photocraft (Photoshop), lightcraft (Lightroom), effectcraft (After Effects), filmcraft (Premiere), AniCraft (2D animation), soundcraft (Pro Tools), deckcraft (PowerPoint), wordcraft (Word), gridcraft (Excel), pdfcraft (Acrobat), figcraft (Figma), cadcraft (AutoCAD) and craft-launcher, all at github.com/storytold/<app>. Example: `vectorcraft-cli mcp`, `vectorcraft-cli run --in x.vectorcraft --export out.pdf`. Alpha quality with frequent releases, so pin versions and check every export.
+
+**We do NOT use ArtCraft for AI image generation.** `storytold/artcraft` (the AI image/video app, getartcraft.com) and the PyPI package `artcraft` are not what we mean.
